@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Tables of <input type="number" id="multiplyWith" /> </p>
+<button onclick="numbers.forEach(myFunction)">click me</button>
+
+<p>Tables: <span id="demo"></span></p>
+
+<script>
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function myFunction(item,index,arr) {
+
+ var i = document.getElementById("multiplyWith").value;
+    arr[index] = item * i;
+    
+    demo.innerHTML += i + "*" + item + "=" + numbers[index] + "<br>";
+    }
+
+</script>
+
+</body>
+</html>
